@@ -1,0 +1,53 @@
+.social-network {
+  display: flex;
+
+  &--centered {
+    justify-content: center;
+  }
+}
+
+.social-network__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-network__link {
+  @include flex-centered();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--color-gray {
+    color: var(--main-icon-color);
+    transition: color var(--transition-duration) var(--transition-timing-function),
+      background-color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--secondary-icon-color);
+      background-color: var(--accent-btn-background-color);
+    }
+  }
+
+  &--bg-color-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-btn-background-color);
+    }
+  }
+}
+
+.social-network__icon {
+  width: 20px;
+  height: 20px;
+
+  &--fill-gray {
+    fill: currentColor;
+  }
+  &--fill-white {
+    fill: var(--secondary-icon-color);
+  }
+}

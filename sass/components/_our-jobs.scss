@@ -1,0 +1,42 @@
+.our-jobs {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 0;
+}
+.our-jobs__title {
+  margin-bottom: 50px;
+}
+.our-jobs__list {
+  display: flex;
+}
+.our-jobs__item {
+  position: relative;
+  width: calc((100% - 2 * 30px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.our-jobs__img {
+  max-width: 100%;
+  height: auto;
+}
+.our-jobs__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @include flex-centered();
+  width: 100%;
+  min-height: 70px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+
+  background-color: rgba(47, 48, 58, 0.8);
+}

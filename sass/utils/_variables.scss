@@ -1,0 +1,27 @@
+:root {
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --section-background-color: #f5f4fa;
+  /* text color */
+  --main-text-color: #212121;
+  --first-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --contaks-footer-color: rgba(255, 255, 255, 0.6);
+  /* logo */
+  --main-logo-color: #2196f3;
+  --first-logo-color: #000000;
+  --second-logo-color: #ffffff;
+  /* button */
+  --main-btn-color: #212121;
+  --accent-btn-color: #ffffff;
+  --main-btn-background-color: #f5f4fa;
+  --accent-btn-background-color: #2196f3;
+  --secondary-accent-btn-background-color: #188ce8;
+  /* icon */
+  --main-icon-color: #afb1b8;
+  --secondary-icon-color: #ffffff;
+  /* transition */
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
