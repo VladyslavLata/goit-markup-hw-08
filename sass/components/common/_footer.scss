@@ -1,39 +1,42 @@
 .footer {
   padding: 60px 0;
   background-color: var(--secondary-background-color);
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .footer__container {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    @include flex-centered($items: baseline);
-    flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    @include flex-centered($items: baseline, $content: space-between);
+  }
+}
+
+.footer__wrap {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
-    @include flex-centered($items: baseline, $content: null);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: space-around;
   }
 }
 
 .footer__address-box {
-  @media screen and (max-width: 1199px) {
-    text-align: center;
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     width: 231px;
   }
-  // margin-right: 70px;
-  // width: 231px;
 }
 
 .footer__logo {
@@ -75,12 +78,8 @@
 }
 
 .footer__social-network-box {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
   }
 }
 
@@ -124,6 +123,10 @@
   border-radius: 4px;
   background-color: var(--secondary-background-color);
 
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
   }
@@ -135,7 +138,6 @@
 
 .footer__btn {
   @media screen and (max-width: 1199px) {
-    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
   }
